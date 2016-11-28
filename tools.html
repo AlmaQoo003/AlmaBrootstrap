@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="Alma">
+
+<title>Alma's Template</title>
+  
+
+<!-- @@@ remember to import css for font's effect-->
+<link href="css\Font\font.css" rel="stylesheet">
+<link href="css\build.css" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/theme.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body role="document">
+
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="Alma's World.html">Bootstrap theme</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="Alma's World.html">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+						</ul></li>
+					<li><a href="alert.html">Alert</a></li>
+					<li><a href="table.html">Table</a></li>
+					<li><a href="tools.html">Tools</a></li>
+					<li><a href="dynamicForm.html">DForm</a></li>
+					<li><a href="slideInfo.html">SInfo</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="container theme-showcase" role="main">
+
+
+
+		<h2>Checkboxes</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<fieldset>
+					<legend> Basic </legend>
+					<p>Supports bootstrap brand colors:</p>
+					<div class="checkbox">
+						<input id="checkbox1" class="styled" type="checkbox"> <label
+							for="checkbox1"> Default </label>
+					</div>
+					<div class="checkbox checkbox-primary">
+						<input id="checkbox2" class="styled" type="checkbox" checked>
+						<label for="checkbox2"> Primary </label>
+					</div>
+					<div class="checkbox checkbox-success">
+						<input id="checkbox3" class="styled" type="checkbox"> <label
+							for="checkbox3"> Success </label>
+					</div>
+					<div class="checkbox checkbox-info">
+						<input id="checkbox4" class="styled" type="checkbox"> <label
+							for="checkbox4"> Info </label>
+					</div>
+					<div class="checkbox checkbox-warning">
+						<input id="checkbox5" type="checkbox" class="styled" checked>
+						<label for="checkbox5"> Warning </label>
+					</div>
+					<div class="checkbox checkbox-danger">
+						<input id="checkbox6" type="checkbox" class="styled" checked>
+						<label for="checkbox6"> Check me out </label>
+					</div>
+					<p>Checkboxes without label text</p>
+					<div class="checkbox">
+						<input type="checkbox" class="styled" id="singleCheckbox1"
+							value="option1"> <label></label>
+					</div>
+					<div class="checkbox checkbox-primary">
+						<input type="checkbox" class="styled styled-primary"
+							id="singleCheckbox2" value="option2" checked> <label></label>
+					</div>
+					<p>Inline checkboxes</p>
+					<div class="checkbox checkbox-inline">
+						<input type="checkbox" class="styled" id="inlineCheckbox1"
+							value="option1"> <label for="inlineCheckbox1">
+							Inline One </label>
+					</div>
+					<div class="checkbox checkbox-success checkbox-inline">
+						<input type="checkbox" class="styled" id="inlineCheckbox2"
+							value="option1" checked> <label for="inlineCheckbox2">
+							Inline Two </label>
+					</div>
+					<div class="checkbox checkbox-inline">
+						<input type="checkbox" class="styled" id="inlineCheckbox3"
+							value="option1"> <label for="inlineCheckbox3">
+							Inline Three </label>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col-md-4">
+				<fieldset>
+					<legend> Circled </legend>
+					<p>for roundness.</p>
+					<div class="checkbox checkbox-circle">
+						<input id="checkbox7" class="styled" type="checkbox"> <label
+							for="checkbox7"> Simply Rounded </label>
+					</div>
+					<div class="checkbox checkbox-info checkbox-circle">
+						<input id="checkbox8" class="styled" type="checkbox" checked>
+						<label for="checkbox8"> Me too </label>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col-md-4">
+				<fieldset>
+					<legend> Disabled </legend>
+					<p>Disabled state also supported.</p>
+					<div class="checkbox">
+						<input class="styled" id="checkbox9" type="checkbox" disabled>
+						<label for="checkbox9"> Can't check this </label>
+					</div>
+					<div class="checkbox checkbox-success">
+						<input class="styled styled" id="checkbox10" type="checkbox"
+							disabled checked> <label for="checkbox10"> This
+							too </label>
+					</div>
+					<div class="checkbox checkbox-warning checkbox-circle">
+						<input class="styled" id="checkbox11" type="checkbox" disabled
+							checked> <label for="checkbox11"> And this </label>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+
+		<h2>Radios</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<fieldset>
+					<legend> Basic </legend>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="radio">
+								<input type="radio" name="radio1" id="radio1" value="option1"
+									checked> <label for="radio1"> Small </label>
+							</div>
+							<div class="radio">
+								<input type="radio" name="radio1" id="radio2" value="option2">
+								<label for="radio2"> Big </label>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="radio radio-danger">
+								<input type="radio" name="radio2" id="radio3" value="option1">
+								<label for="radio3"> Next </label>
+							</div>
+							<div class="radio radio-danger">
+								<input type="radio" name="radio2" id="radio4" value="option2"
+									checked> <label for="radio4"> One </label>
+							</div>
+						</div>
+					</div>
+					<p>Radios without label text</p>
+					<div class="radio">
+						<input type="radio" id="singleRadio1" value="option1"
+							name="radioSingle1"> <label></label>
+					</div>
+					<div class="radio radio-success">
+						<input type="radio" id="singleRadio2" value="option2"
+							name="radioSingle1" checked> <label></label>
+					</div>
+					<p>Inline radios</p>
+					<div class="radio radio-info radio-inline">
+						<input type="radio" id="inlineRadio1" value="option1"
+							name="radioInline" checked> <label for="inlineRadio1">
+							Inline One </label>
+					</div>
+					<div class="radio radio-inline">
+						<input type="radio" id="inlineRadio2" value="option2"
+							name="radioInline"> <label for="inlineRadio2">
+							Inline Two </label>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col-md-4">
+				<fieldset>
+					<legend> Disabled </legend>
+					<p>Disabled state also supported.</p>
+					<div class="radio radio-danger">
+						<input type="radio" name="radio3" id="radio5" value="option1"
+							disabled> <label for="radio5"> Next </label>
+					</div>
+					<div class="radio">
+						<input type="radio" name="radio3" id="radio6" value="option2"
+							checked disabled> <label for="radio6"> One </label>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col-md-4">
+				<fieldset>
+					<legend> As Checkboxes </legend>
+					<p>Radios can be made to look like checkboxes.</p>
+					<div class="checkbox checkbox">
+						<input type="radio" name="radio4" id="radio7" value="option1"
+							checked> <label for="radio7"> Defeault </label>
+					</div>
+					<div class="checkbox checkbox-success">
+						<input type="radio" name="radio4" id="radio8" value="option2">
+						<label for="radio8"> Success </label>
+					</div>
+					<div class="checkbox checkbox-danger">
+						<input type="radio" name="radio4" id="radio9" value="option3">
+						<label for="radio9"> Danger </label>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	<!-- container -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

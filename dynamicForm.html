@@ -1,0 +1,188 @@
+<!--
+jquery hide() hide matched elements.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="Alma">
+
+<title>Alma's Template</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/theme.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body role="document">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="Alma's World.html">Bootstrap theme</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Alma's World.html">Home</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle"
+            data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">One more separated link</a></li>
+            </ul></li>
+          <li><a href="alert.html">Alert</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="dynamicForm.html">DForm</a></li>
+          <li><a href="slideInfo.html">SInfo</a></li>
+        </ul>
+      </div>
+      <!--.nav-collapse -->
+    </div>
+  </nav>
+  <!--Navbars-->
+
+  <div class="container theme-showcase" role="main">
+    <div class="page-header">
+      <h1>Dynamic input</h1>
+    </div>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="focusedInput">Focused</label>
+        <div class="col-xs-9">
+          <input class="form-control" id="focusedInput" name="focusedInput"
+            type="text" placeholder="Click to focus">
+        </div>
+        <img src="icon/add.png" alt="add one more same input" height="30"
+          width="30" class="floatLeft">
+      </div>
+
+      <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
+        <div class="col-xs-9">
+          <input class="form-control" id="disabledInput" type="text" disabled>
+        </div>
+        <img src="icon/add.png" alt="add one more same input" height="30"
+          width="30" class="floatLeft">
+      </div>
+      <fieldset disabled>
+        <div class="form-group">
+          <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset
+            disabled</label>
+          <div class="col-xs-9">
+            <input type="text" id="disabledTextInput" class="form-control">
+          </div>
+          <img src="icon/add.png" alt="add one more same input" height="30"
+            width="30" class="floatLeft">
+        </div>
+        <div class="form-group">
+          <label for="disabledSelect" class="col-sm-2 control-label"></label>
+          <div class="col-xs-9">
+            <select id="disabledSelect" class="form-control">
+              <option>Disabled select</option>
+            </select>
+          </div>
+
+        </div>
+      </fieldset>
+      <div class="form-group has-success has-feedback">
+        <label class="col-sm-2 control-label" for="inputSuccess">
+          Input with success and icon</label>
+        <div class="col-xs-9">
+          <input type="text" class="form-control" id="inputSuccess">
+          <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <img src="icon/add.png" alt="add one more same input" height="30"
+          width="30" class="floatLeft">
+      </div>
+      <div class="form-group has-warning has-feedback">
+        <label class="col-sm-2 control-label" for="inputWarning">
+          Input with warning and icon</label>
+        <div class="col-xs-9">
+          <input type="text" class="form-control w-80" id="inputWarning">
+          <span
+            class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+        <img src="icon/add.png" alt="add one more same input" height="30"
+          width="30" class="floatLeft">
+      </div>
+
+      <div class="form-group has-error has-feedback">
+        <label class="col-sm-2 control-label" for="inputError">
+          Input with error and icon</label>
+        <div class="col-xs-9">
+          <input type="text" class="form-control" id="inputError"> <span
+            class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+        <img src="icon/add.png" alt="add one more same input" height="30"
+          width="30" class="floatLeft">
+      </div>
+    </form>
+  </div>
+  <!-- container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+<style type="text/css">
+.floatLeft {
+  float: left;
+}
+</style>
+
+<script>
+  $(document).on("click", '.del', function(e) {
+    $(this).parent().slideUp("normal", function() {
+      $(this).remove();
+    });
+    //fix it by putting the call to remove in a callback arg to slideUp
+  });
+  $('img').click(
+      function() {
+        var targetTag = $(this).parent().clone();
+        targetTag.find('img').attr("src", "icon/del.png").addClass(
+            'del').prop("alt", "delete this input row");
+
+        var temp = $(this).parent();
+        targetTag.insertAfter(temp).hide().slideDown('slow');
+      });
+</script>
+</html>

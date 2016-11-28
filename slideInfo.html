@@ -1,0 +1,233 @@
+<!--
+1.reset.css is a standard css for supporting all the browser
+
+2. normalize.css is a sencond generation of reset.css
+
+3. when using bootstrap, it is already using normalize.css
+
+4. <!DOCTYPE html> is let the browsers to understand the advanced css; otherwise
+  it will become ie5's effect
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="Alma">
+
+<title>Alma's Template</title>
+
+<!-- @@@ remember to import css for font's effect-->
+<link href="css\Font\font.css" rel="stylesheet">
+<link href="css\build.css" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/theme.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body role="document">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="Alma's World.html">Bootstrap
+          theme</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Alma's World.html">Home</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle"
+            data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">One more separated link</a></li>
+            </ul></li>
+          <li><a href="alert.html">Alert</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="dynamicForm.html">DForm</a></li>
+          <li><a href="slideInfo.html">SInfo</a></li>
+        </ul>
+      </div>
+      <!--.nav-collapse -->
+    </div>
+  </nav>
+  <!--Navbars-->
+
+  <div class="container theme-showcase" role="main">
+    <div class="page-header">
+      <h1>slide information</h1>
+    </div>
+    <div class="row ">
+      <div class="col-sm-7">
+        <div class="panel panel-primary">
+          <div class="btn-group glyphicon-position alignCenterBtn floatL"
+            data-toggle="buttons">
+            <label class="btn btn-info active"> <input type="radio"
+              name="iconposition" value="left"> <span
+              class="glyphicon glyphicon-arrow-left"></span> Left
+            </label>
+          </div>
+          <div class="btn-group glyphicon-position floatR"
+            data-toggle="buttons">
+            <label class="btn btn-info"> <input type="radio"
+              name="iconposition" value="right"> Right <span
+              class="glyphicon glyphicon-arrow-right"></span>
+            </label>
+          </div>
+          <div class="panel-heading alignCenter">
+            <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body alignCenter">
+            <img src="images/apple.png"
+              class="img-responsive center-block displayShowI"
+              alt="Cinque Terre" width="200" height="236"> <img
+              src="images/grape.png"
+              class="img-responsive center-block displayNoneI"
+              alt="Cinque Terre" width="200" height="236"> <img
+              src="images/banana.png"
+              class="img-responsive center-block displayNoneI"
+              alt="Cinque Terre" width="200" height="236">
+          </div>
+          <div>
+            <div class="checkbox checkbox-primary alignCenter displayShowC">
+              <input id="checkbox1" class="styled " type="checkbox"> <label
+                for="checkbox1"> Apple </label>
+            </div>
+            <div class="checkbox checkbox-primary alignCenter displayNoneC">
+              <input id="checkbox2" class="styled " type="checkbox"> <label
+                for="checkbox2"> Grape </label>
+            </div>
+            <div class="checkbox checkbox-primary alignCenter displayNoneC">
+              <input id="checkbox3" class="styled " type="checkbox"> <label
+                for="checkbox3"> Banana </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .col-sm-4 -->
+    </div>
+  </div>
+  <!-- container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+<style type="text/css">
+.btn {
+  padding: 8px 14px;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.floatR {
+  float: right;
+}
+
+.floatL {
+  float: left;
+}
+
+.displayNoneI, .displayNoneC {
+  display: none;
+}
+
+.displayShowI, .displayShowC {
+  display: block;
+}
+</style>
+
+<script>
+  $(".btn").click(
+      function() {
+        var direction = $(this).children(
+            'input:radio[name=iconposition]').val();
+
+        if (direction === 'left') {
+          var imageS = $(".displayShowI").prev().attr('src');
+          var checkboxS = $(".displayShowC").prev().attr('class');
+
+          if (typeof (imageS) === 'undefined'
+              || typeof (checkboxS) === 'undefined') {
+            imageS = $(".displayShowI").parent().children(
+                'img:last-child');
+            checkboxS = $(".displayShowC").parent().children(
+                '.checkbox:last-child');
+          } else {
+            imageS = $(".displayShowI").prev();
+            checkboxS = $(".displayShowC").prev();
+          }
+        }
+
+        else if (direction === 'right') {
+          var imageS = $(".displayShowI").next().attr('src');
+          var checkboxS = $(".displayShowC").next().attr('class');
+          if (typeof (imageS) === 'undefined'
+              || typeof (checkboxS) === 'undefined') {
+            imageS = $(".displayShowI").parent().children(
+                'img:first-child');
+            checkboxS = $(".displayShowC").parent().children(
+                '.checkbox:first-child');
+          } else {
+            imageS = $(".displayShowI").next();
+            checkboxS = $(".displayShowC").next();
+          }
+        }
+        $(".displayShowI").hide(
+            'fast',
+            function() {
+              $(this).removeClass('displayShowI').addClass(
+                  'displayNoneI');
+            });
+
+        imageS.show('fast', function() {
+          $(this).removeClass('displayNoneI')
+              .addClass('displayShowI');
+        });
+        $(".displayShowC").removeClass('displayShowC').addClass(
+            'displayNoneC');
+        checkboxS.removeClass('displayNoneC').addClass('displayShowC');
+      });
+</script>
+</html>
